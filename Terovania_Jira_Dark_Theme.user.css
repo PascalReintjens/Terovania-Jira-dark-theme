@@ -1,0 +1,729 @@
+/* ==UserStyle==
+@name           Terovania Jira Dark Theme
+@namespace      EaranMaleasi.terovaniajiradark
+@version        1.0.0
+@description    A dark theme for the terovania jira instance
+@author         EaranMakeasi
+@license        CC-BY-NC-SA-4.0
+==/UserStyle== */
+@-moz-document domain("dev.terovania.de") {
+    :root{
+        --backgroundColor: #202020;
+        --backgroundColorElevated1:#292929;
+        --backgroundColorElevated2:#303030;
+        --backgroundColorElevated3:#393939;
+        --backgroundColorElevated4:#404040;
+        --backgroundColorElevated5:#494949;
+        --backgroundColorElevated6:#505050;
+        --backgroundColorElevated7:#595959;
+    
+        --textColorLight2:#fff;
+        --textColorLight1:#ddd;
+        --textColor:#bbb;   
+        --textColorDark1:#aaa;
+        --textColorDark2:#999;
+        --textColorDark3:#888;
+        --textColorVeryDark1:#222;
+        --textColorVeryDark2:#111;
+        --textColorVeryDark3:#000;
+    
+        --accentColorBlue:#254c73;
+        --accentColorCyan:#00494e;
+        --accentColorYellow:#ebc244;;
+    
+        --linkColor:#ebc244;
+        --linkColorHover: var(--linkColor);
+    
+        --iconColor: #111;
+        --iconColorLight: #888;
+    
+        --borderColor:#888;
+        --borderColorPostButton: #666;
+    
+        --threadPostProfilePanelStarter: var(--accentColorYellow);
+        --threadPostProfilePanelReplier: var(--accentColorCyan);
+        
+        --badgeTextColor: var(--textColor);
+        --badgeBackgroundColor: var(--backgroundColorElevated7);
+        
+        --breadcrumbsBackgroundColor: var(--backgroundColorElevated2);
+        --breadcrumbsTextColor: var(--textColor);
+        
+        --containerHover: var(--backgroundColorElevated5);
+        
+        --textHeaderColor:var(--textColor);
+            
+        --quoteBackgroundColor: var(--backgroundColorElevated3);
+    
+        --inlineCodeBackground: var(--backgroundColorElevated5);
+        
+        --postButtonBackground: var(--backgroundColorElevated5);
+        
+        
+        --noBorderWidth:0;
+        --noBorderColor:transparent;
+        
+        --announcementColor:var(--accentColorYellow);
+        --stickyColor:var(--accentColorCyan)
+    }
+    
+    #activitymodule .issuePanelContainer {
+        background-color:var(--backgroundColorElevated1)
+    }
+    
+    #activity-stream-show-more span {
+        color: var(--linkColor)
+    }
+    #activity-stream-show-more {
+        border-radius: var(--noBorderWidth);
+        background-color: var(--backgroundColorElevated2);
+        border: 1px solid var(--borderColor);
+    }
+    
+    #dashboard {
+        background: var(--backgroundColor);
+        border : none;
+    }
+    #dashboard-content {
+        min-height: 600px;
+        background-color: var(--backgroundColor) !important;
+    }
+    #dashboard-content > .aui-page-header {
+        background: var(--backgroundColor);
+    }
+    
+    #footer-logo {
+        background: none;
+    }
+    
+    #gh:not(.ghx-sticky-sprint-headers-disabled) .ghx-backlog-container .ghx-backlog-header {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        z-index: 1;
+        background: var(--backgroundColorElevated2);
+    }
+    
+    #ghx-column-header-group {
+        background: var(--backgroundColor);
+    }
+    #ghx-header h1, #ghx-header h2 {
+        color: var(--accentColorYellow);
+    }
+    
+    #ghx-operations {
+        border-bottom: 2px solid var(--borderColor);
+    }
+    
+    #ghx-pool {
+        background: var(--backgroundColor);
+    }
+    
+    #issue-content {
+        background-color: var(--backgroundColor);
+        height: 100%;
+    }
+    
+    #issuetable, .issue-table {
+        background-color: var(--backgroundColorElevated1);
+        border-collapse: collapse;
+        margin: var(--noBorderWidth);
+    }
+    
+    #issuetable > thead .active, 
+    .issue-table > thead .active {
+        color: #7a869a;
+        background-color: var(--backgroundColorElevated1);
+    }
+    
+    #issuetable > tbody > tr, 
+    .issue-table > tbody > tr, 
+    #issuetable > tfoot > tr, 
+    .issue-table > tfoot > tr {
+        background-color: var(--backgroundColorElevated1);
+        color: #172b4d;
+    }
+   
+    
+    body{
+        background:var(--backgroundColor);
+        color:var(--textColor);
+    }
+    
+    html body{
+        background:var(--backgroundColorElevated1);
+        color:var(--textColor);
+    }
+    
+    a {
+        color: var(--linkColor);
+    }
+    
+    a:hover {
+        color: var(--linkColor);
+    }
+    
+    .activity-item-description blockquote {
+        background: var(--backgroundColorElevated2);
+        color: var(--textColor);
+    }
+    .activity-item-actions a, 
+    .activity-item-actions a:link, 
+    .activity-item-actions a:visited {
+        color: var(--linkColor);
+    }
+    
+    .activity-item {
+        border-top: 0;
+        color: var(--textColorDark3);
+    }
+    .activity-item-grouped .activity-item-summary {
+        border-top: 1px solid var(--borderColor);
+    }
+    .activity-item-summary {
+        color: var(--textColorDark3);
+        line-height: 145%;
+        padding-top: .8em;
+        word-wrap: break-word;
+    }
+    
+    
+    .activity-stream-container h2 {
+        color: var(--linkColor);
+    }
+    
+    .ajs-layer {
+        background-color: var(--backgroundColorElevated5);
+        border-radius: var(--noBorderWidth);
+    }
+    
+    aui-badge, 
+    .aui-badge {
+        color: var(--badgeTextColor);
+        background: var(--badgeBackgroundColor);
+    }
+    .aui-button 
+    .aui-icon, 
+    .aui-button:hover 
+    .aui-icon {
+        color: var(--iconColorLight);
+    }
+    
+    .aui-button-subtle.aui-button.active, 
+    .aui-button.active {
+        border-color: var(--noBorderColor);
+    }
+    
+    .aui-button, 
+    .aui-button:visited, 
+    a.aui-button {
+        color: var(--linkColor);
+        background-color: var(--backgroundColorElevated3);
+        border-radius: var(--noBorderWidth);
+    }
+    
+    .aui-button-subtle.aui-button:focus,
+    .aui-button-subtle.aui-button:hover,
+    .aui-button:focus,
+    .aui-button:hover {
+        background-color: var(--backgroundColorElevated1);
+        border-color: var(--noBorderColor);
+        color: var(--linkColor);
+    }
+    
+    .aui-button.aui-button-link {
+        color: var(--linkColor);
+    }
+    .aui-button.aui-button-link:hover {
+        color: var(--linkColor);
+    }
+    
+    .aui-button.aui-button-subtle {
+        background-color: transparent;
+        border-color: transparent;
+        color: var(--iconColorLight);
+    }
+
+    .aui-dd-parent .aui-dropdown a.item-link, 
+    .aui-dd-parent .aui-dropdown a.item-link:link, 
+    .aui-dd-parent .aui-dropdown a.item-link:visited, 
+    .aui-dropdown a.item-link, 
+    .aui-dropdown a.item-link:link, 
+    .aui-dropdown a.item-link:visited {
+        color: var(--linkColor);
+    }
+    
+    .aui-dd-parent .aui-dropdown, 
+    .aui-dd-parent .aui-shadow-parent, 
+    .aui-dropdown {
+        background: var(--backgroundColorElevated5);
+    }
+    
+    .aui-dropdown2.aui-style-default {
+        background: var(--backgroundColorElevated5);
+        border: var(--noBorderWidth);
+        border-radius: var(--noBorderWidth);
+        color: var(--linkColor);
+    }
+    
+    .aui-dropdown2.aui-style-default [role="checkbox"], 
+    .aui-dropdown2.aui-style-default [role="menuitem"], 
+    .aui-dropdown2.aui-style-default [role="menuitemcheckbox"], 
+    .aui-dropdown2.aui-style-default [role="menuitemradio"], 
+    .aui-dropdown2.aui-style-default [role="radio"], 
+    .aui-dropdown2.aui-style-default a {
+        background-color: transparent;
+        color: var(--linkColor);
+    }
+    
+    .aui-dropdown2.aui-style-default:hover .aui-dropdown2-checkbox,
+    .aui-dropdown2.aui-style-default:hover .aui-dropdown2-radio,
+    .aui-dropdown2.aui-style-default:hover a {
+        color: var(--linkColor);
+    }
+    
+    .aui-dropdown2-heading[data-v-fe28b7ec], 
+    .aui-dropdown2.aui-style-default .aui-dropdown2-section > strong[data-v-fe28b7ec], 
+    .aui-dropdown2.aui-style-default > strong[data-v-fe28b7ec], 
+    .quick-search-section-heading[data-v-fe28b7ec] {
+        color: var(--accentColorYellow);
+    }
+
+    .aui-header{
+        background: var(--backgroundColorElevated5);
+        color: var(--textColor);
+    } 
+    
+    .aui-header .aui-dropdown2-trigger {
+        color: var(--linkColor);
+    }
+    
+    .aui-header a {
+        color: var(--textColor);;
+    }
+    
+    .aui-inline-dialog .aui-inline-dialog-contents, 
+    .aui-inline-dialog .contents, 
+    aui-inline-dialog .aui-inline-dialog-contents, 
+    aui-inline-dialog .contents {
+        background: var(--backgroundColorElevated5);
+        border: 0 solid var(--borderColor);
+        border-radius: var(--noBorderWidth);
+    }
+    
+    .aui-label {
+        background: var(--noBorderColor);
+        border: var(--noBorderWidth);
+        border-radius: var(--noBorderWidth);
+        padding: 3px 5px;
+    }
+
+    .aui-list a:link, 
+    .aui-list a:visited {
+        color: var(--linkColor);
+    }
+    
+    .aui-list h5 {
+        color: var(--accentColorYellow);;
+    }
+    
+    .aui-list .aui-list-section + .dev-status-basic-note, 
+    .aui-list .aui-list-section + .aui-list-section {
+        border-top: 1px solid var(--borderColor);
+    }
+    
+    .aui-navgroup-horizontal .aui-nav > li a, 
+    .aui-navgroup-vertical .aui-nav > li > a, 
+    .aui-nav-vertical > li > a {
+        color: var(--linkColor);
+    }
+    
+    .aui-navgroup-horizontal .aui-nav > li a:hover, 
+    .aui-navgroup-vertical .aui-nav > li > a:hover, 
+    .aui-nav-vertical > li > a:hover {
+        color: var(--linkColor);
+    }
+    
+    .aui-page-panel {
+        background: var(--backgroundColor);
+    }
+    
+    .aui-sidebar .aui-sidebar-wrapper {
+        border-color: var(--noBorderColor);
+        background-color: var(--backgroundColorElevated3);
+    }
+    
+    .aui-sidebar .aui-sidebar-footer {
+        border:var(--noBorderWidth);
+    }
+    
+    .aui-tabs > .tabs-menu .menu-item a, 
+    .aui-tabs > .tabs-menu .menu-item a:link, 
+    .aui-tabs > .tabs-menu .menu-item a:visited {
+        color: var(--linkColor);
+    }
+    
+    .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a, 
+    .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:active, 
+    .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:focus, 
+    .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:hover, 
+    .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:link, 
+    .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:visited {
+        color: var(--linkColor);
+    }
+    
+    .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a::after {
+        background: var(--accentColorYellow);
+    }
+    
+    .aui-tabs.horizontal-tabs > .tabs-menu::after {
+        background: var(--borderColor);
+    }
+    
+    .date-header {
+        border-top: 1px solid var(--borderColor);
+        color: var(--textColor);
+        background-color: var(--backgroundColorElevated2)
+    }
+    
+    .details-layout .split-view .list-results-panel .list-panel .issue-list > li.focused {
+        background-color: var(--backgroundColorElevated2);
+    }
+    .details-layout .split-view .list-results-panel .list-panel .issue-list > li {
+        border-bottom-color: var(--borderColor);
+        background-color: var(--backgroundColorElevated1)
+    }
+     .details-layout .split-view .list-results-panel .list-panel .issue-list > li:hover {
+       background-color: var(--backgroundColorElevated3)
+    }
+    .details-layout .split-view .list-results-panel .count-pagination {
+        border-top-color: var(--borderColor);
+    }
+    
+    
+    .editable-field.active {
+        background-color: var(--backgroundColorElevated1);
+    }
+    
+    .editable-field:hover {
+        background: var(--backgroundColorElevated1);
+    }
+    
+    .editable-field form.aui .text, 
+    .editable-field form.aui .password,
+    .editable-field form.aui .textarea, 
+    .editable-field form.aui .select, 
+    .editable-field form.aui .multi-select {
+        box-shadow: none;
+    }
+    
+    .editable-field .save-options {
+        background-color: var(--backgroundColorElevated1);
+        border: 1px solid var(--borderColor);
+        border-radius: var(--noBorderWidth);
+    }
+    
+    form.aui .aui-select2-container, 
+    form.aui .multi-select, 
+    form.aui .password, 
+    form.aui .select, 
+    form.aui .text, 
+    form.aui .textarea, 
+    form.aui .upfile {
+        background: var(--backgroundColorElevated1);
+        border-radius: var(--noBorderWidth);
+        color: var(--textColor);
+    }
+    
+    .gadget .dashboard-item-content {
+        border-bottom-left-radius: var(--noBorderWidth);
+        border-bottom-right-radius: var(--noBorderWidth);
+        background: var(--backgroundColorElevated1);
+    }
+    .gadget .dashboard-item-header {
+        background: #eee;
+        border-top-left-radius: var(--noBorderWidth);
+        border-top-right-radius: var(--noBorderWidth);
+    }
+    
+    .gadget.color3 .dashboard-item-title {
+        color: var(--textColorVeryDark1);
+    }
+    
+    .gadget .gadget-menu .aui-icon, .gadget .gadget-menu .aui-dd-trigger {
+        color: var(--iconColor);
+    }
+    
+    .gadget a, .config a {
+        color: var(--linkColor);
+    }
+    
+    .g-project li.project-item {
+        background-color: var(--backgroundColorElevated2);
+    }
+    
+    .ghx-backlog-container {
+        background-color: var(--backgroundColorElevated1);
+        border: var(--noBorderWidth);
+        border-radius: var(--noBorderWidth);
+    }
+    
+    .ghx-backlog-header .ghx-name {
+        color: var(--accentColorYellow);
+    }
+    
+    .ghx-classification-item {
+        background-color: var(--backgroundColorElevated1);
+        border-bottom: 1px solid var(--borderColor);
+        color: var(--textColor);
+    }
+    
+    .ghx-classification-item .aui-item {
+        color: var(--textColor);
+    }
+    
+    .ghx-classification-item:hover {
+        background-color: var(--backgroundColorElevated2);
+        border-bottom: 1px solid var(--borderColor);
+        color: var(--textColor);
+    }
+    
+    .ghx-classification-item.ghx-selected {
+        background-color: var(--backgroundColorElevated3);
+        border-color: var(--borderColor);
+    }
+    
+        .ghx-classification-progress, .ghx-classification-progress:first-child {
+        background: rgba(9,30,66,0.13);
+        margin-top: 5px;
+    }
+    
+    .ghx-column-headers .ghx-column {
+        background: var(--backgroundColorElevated1);
+        border-bottom: 5px solid var(--backgroundColorElevated1);
+    }
+    
+    .ghx-column-headers .ghx-column, 
+    .ghx-columns .ghx-column {
+        background: var(--backgroundColorElevated1);
+    }
+    
+    
+    .ghx-detail-contents {
+        background: linear-gradient(90deg, var(--backgroundColorElevated1) 40px, var(--noBorderColor) 0);
+    }
+    
+    .ghx-detail-issue {
+        color: var(--textColor);
+    }
+    
+    .ghx-detail-view.gh-editable-detail-view .ghx-detail-issue .module.toggle-wrap .toggle-title {
+        color: var(--textColor);
+    }
+    
+    .ghx-detail-view.gh-editable-detail-view .ghx-detail-issue .ghx-fa {
+        color: var(--textColor);
+        font-style: normal;
+    }
+    
+    .ghx-detail-view.gh-editable-detail-view #commentmodule .tabwrap .sortwrap .issue-activity-sort-link {
+        background: var(--noBorderColor);
+    }
+    
+    .ghx-editable::after {
+        background: var(--backgroundColorElevated3) url("/s/-l61pxq/803003/7904a5e64c2a6000ed8034af7f82103c/8.3.0-DAILY20190802161355/_/download/resources/com.pyxis.greenhopper.jira:gh-rapid-common-css/images/rapid/ghx-editable.png") no-repeat 4px 5px;
+        border-left: 1px solid var(--borderColor);
+    }
+    
+    .ghx-editable:hover {
+        background: var(--backgroundColorElevated3);
+        color: var(--textColor);
+        border-radius: var(--noBorderWidth);
+        box-shadow: none;
+    }
+    
+    .ghx-grabber {
+        border-radius: var(--noBorderWidth);
+    }
+    
+    .ghx-header > h3 {
+        color:var(--accentColorYellow)
+    }
+    
+    .ghx-issue-compact.ghx-selected .ghx-end {
+        background: var(--noBorderColor);
+    }
+    
+    .ghx-issue {
+        background: var(--backgroundColorElevated3);
+        color:var(--textColor)
+    }
+    .ghx-issue .ghx-key-link {
+        color: var(--linkColor);
+    }
+    
+    .ghx-issue:hover {
+        background: var(--backgroundColorElevated7);
+    }
+    
+    .ghx-issue.ghx-selected {
+        background: var(--backgroundColorElevated5);
+    }
+    
+    .ghx-issue.ghx-selected:hover {
+        background: var(--backgroundColorElevated7);
+    }
+    
+    .ghx-issue-compact {
+        background: var(--backgroundColorElevated2);
+        box-shadow: none;
+        border-radius: var(--noBorderWidth);
+        color: var(--textColor);
+    }
+    
+    .ghx-issue-compact:hover {
+        background: var(--backgroundColorElevated4);
+        box-shadow: none;
+        border-radius: var(--noBorderWidth);
+        color: var(--textColor);
+    }
+    
+    .ghx-issue-compact .ghx-end,
+    .ghx-issue-compact.ghx-selected .ghx-end,
+    .ghx-issue-compact.ghx-flagged .ghx-end,
+    .ghx-issue-compact.ghx-flagged.ghx-selected .ghx-end {
+        background: var(--noBorderColor);
+    }
+    
+    .ghx-issue-compact:hover .ghx-end,
+    .ghx-issue-compact.ghx-selected:hover .ghx-end,
+    .ghx-issue-compact.ghx-flagged:hover .ghx-end,
+    .ghx-issue-compact.ghx-flagged.ghx-selected:hover .ghx-end {
+        background: var(--noBorderColor);
+    }
+    
+    .ghx-issue-compact .ghx-estimate :hover {
+        background: var(--backgroundColorElevated2);
+    }
+    
+    .ghx-issue-compact.ghx-selected, 
+    .ghx-issue-compact .ghx-selected-group {
+        background: var(--backgroundColorElevated3);
+    }
+    
+    .ghx-issue-compact.ghx-selected:hover, 
+    .ghx-issue-compact .ghx-selected-group:hover {
+        background: var(--backgroundColorElevated4);
+    }
+    
+    .ghx-issuetable {
+        background-color: var(--backgroundColorElevated1);
+    }
+    
+    .ghx-issuetable td.assignee > a {
+        color: var(--linkColor);
+    }
+    
+    .ghx-swimlane-header {
+        background-color: var(--backgroundColorElevated4);
+    }
+    
+    .ghx-swimlane-header::after {
+        box-shadow: none;
+    }
+    
+    h1, h2, h3, h4 {
+        color: var(--textColor);
+    }
+    
+    .icon-container.icon-container[data-v-5c9e2424] {
+        color: var(--accentColorYellow);
+    }
+    .icon-container.icon-container.quick-search-view-all[data-v-5c9e2424] {
+        color: var(--linkColor);
+    }
+    .icon-container.icon-container.quick-search-active[data-v-5c9e2424] {
+        background-color: var(--backgroundColorElevated7);
+    }
+    
+    .issue-body-content .module > .mod-header > h1, 
+    .issue-body-content .module > .mod-header > h2, 
+    .issue-body-content .module > .mod-header > h3, 
+    .issue-body-content .module > .mod-header > h4, 
+    .issue-body-content .module > .mod-header > h5, 
+    .issue-body-content .module > .mod-header > h6 {
+        background-color: var(--noBorderColor);
+    }
+    
+    .issue-body-content .module > .mod-header .ops {
+        background-color: var(--noBorderColor);
+    }
+    
+    .issueaction-aui-icon {
+        color: var(--iconColorLight);
+    }
+    
+    .issue-activity-sort-link {
+        color: var(--iconColorLight);
+    }
+    
+    .issue-list > li .splitview-issue-link .issue-link-summary {
+        color: var(--textColor);
+    }
+    
+    .issue-search > .aui-page-header {
+        border-bottom: 2px solid var(--borderColor);
+    }
+    
+    .ghx-issuetable .issuerow:hover {
+        background-color: var(--backgroundColorElevated2)
+    }
+    
+    table.aui > tbody > tr, 
+    table.aui > tfoot > tr {
+        background: var(--backgroundColorElevated1);
+        color: var(--linkColor);
+    }
+    
+    .issue-data-block:hover,
+    .issue-data-block.focused {
+        background-color: var(--backgroundColorElevated2);
+        border-left: 5px solid #3572b0;
+        padding-left: 5px
+    }
+    
+    .issue-table > tbody > tr:hover{
+        background:var(--backgroundColorElevated3)
+    }
+    
+    .issue-view > .issue-container .issue-header {
+        background-color: var(--backgroundColor);
+    }
+    
+    .quicksearch-dropdown[data-v-62ffbf75] {
+        background-color: var(--backgroundColorElevated5);
+        border-radius: var(--noBorderWidth);
+    }
+    .quick-search-subtitle-container[data-v-5c9e2424] {
+        color: var(--textColor);
+    }
+    
+    .simple-issue-list .inline-issue-create-container {
+        background-color: var(--backgroundColorElevated2);
+        border-top: 2px solid var(--borderColor);
+    }
+    
+    .split-view #stalker, .split-view .issue-header {
+        background-color: var(--noBorderColor);
+    }
+    .split-view .list-results-panel .count-pagination {
+        background-color: var(--backgroundColorElevated2);
+    }
+    .split-view .list-results-panel .count-pagination .aui-icon-small::before {
+        color: var(--iconColorLight);
+    }
+    
+    .stats-gadget table.aui > tbody > tr.stats-gadget-final-row {
+        background-color: var(--backgroundColorElevated2);
+    }
+}
