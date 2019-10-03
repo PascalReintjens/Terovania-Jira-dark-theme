@@ -1,9 +1,11 @@
 /* ==UserStyle==
 @name           Terovania Jira Dark Theme
 @namespace      EaranMaleasi.terovaniajiradark
+@author         EaranMaleasi (https://github.com/EaranMaleasi)
+@homepageURL    https://github.com/EaranMaleasi/Terovania-Jira-dark-theme
+@supportURL     https://github.com/EaranMaleasi/Terovania-Jira-dark-theme/issues
+@updateURL      https://raw.githubusercontent.com/EaranMaleasi/Terovania-Jira-dark-theme/master/Terovania_Jira_Dark_Theme.user.css
 @version        1.0.0
-@description    A dark theme for the terovania jira instance
-@author         EaranMakeasi
 @license        CC-BY-NC-SA-4.0
 ==/UserStyle== */
 @-moz-document domain("dev.terovania.de") {
