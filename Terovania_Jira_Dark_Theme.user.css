@@ -82,6 +82,14 @@
         border: 1px solid var(--borderColor);
     }
     
+    #comment-edit-cancel {
+        Color: var(--linkColor);
+    }
+    #comment-edit-submit {
+        background-color: var(--accentColorYellow);
+        Color: var(--textColorVeryDark1)
+    }
+    
     #dashboard {
         background: var(--backgroundColor);
         border : none;
@@ -121,6 +129,10 @@
         background: var(--backgroundColor);
     }
     
+    #issue-comment-add-cancel{
+        color:var(--accentColorYellow);
+    }
+    
     #issue-content {
         background-color: var(--backgroundColor);
         height: 100%;
@@ -144,6 +156,10 @@
     .issue-table > tfoot > tr {
         background-color: var(--backgroundColorElevated1);
         color: #172b4d;
+    }
+    
+    body#tinymce {
+        background-color:var(--backgroundColorElevated1);
     }
    
     
@@ -222,6 +238,17 @@
         color: var(--linkColor);
         background-color: var(--backgroundColorElevated3);
         border-radius: var(--noBorderWidth);
+    }
+    
+    .aui-button.aui-button-primary, 
+    .aui-button.aui-button-primary:visited {
+        background-image: none;
+        background-color: var(--accentColorYellow);
+        border-color: transparent;
+        color: var(--textColorVeryDark1);
+        text-decoration: none;
+        font-weight: 600;
+
     }
     
     .aui-button-subtle.aui-button:focus,
@@ -334,6 +361,10 @@
         border-top: 1px solid var(--borderColor);
     }
     
+    .aui-lozenge {
+        border-radius:var(--noBorderWidth);
+    }
+    
     .aui-navgroup-horizontal .aui-nav > li a, 
     .aui-navgroup-vertical .aui-nav > li > a, 
     .aui-nav-vertical > li > a {
@@ -344,6 +375,21 @@
     .aui-navgroup-vertical .aui-nav > li > a:hover, 
     .aui-nav-vertical > li > a:hover {
         color: var(--linkColor);
+    }
+    
+    .aui-navgroup-horizontal .aui-nav > .aui-nav-selected a::after {
+        background: var(--linkColor);
+    }
+    
+    .aui-navgroup-horizontal .aui-nav > .aui-nav-selected a, 
+    .aui-navgroup-horizontal .aui-nav > .aui-nav-selected a.active, 
+    .aui-navgroup-horizontal .aui-nav > .aui-nav-selected a:link, 
+    .aui-navgroup-horizontal .aui-nav > .aui-nav-selected a:visited {
+        color: var(--linkColor);
+    }
+    
+    .aui-navgroup-horizontal .aui-nav > li a, .aui-navgroup-horizontal .aui-nav > li a:link, .aui-navgroup-horizontal .aui-nav > li a:visited {
+        color: var(--textColor);
     }
     
     .aui-page-panel {
@@ -357,6 +403,10 @@
     
     .aui-sidebar .aui-sidebar-footer {
         border:var(--noBorderWidth);
+    }
+    
+    .aui-sidebar-submenu .aui-nav > li > .aui-nav-item > .aui-icon, .aui-sidebar .aui-nav > li > .aui-nav-item > .aui-icon {
+        color: var(--iconColorLight);
     }
     
     .aui-tabs > .tabs-menu .menu-item a, 
@@ -395,11 +445,16 @@
         border-bottom-color: var(--borderColor);
         background-color: var(--backgroundColorElevated1)
     }
-     .details-layout .split-view .list-results-panel .list-panel .issue-list > li:hover {
+    .details-layout .split-view .list-results-panel .list-panel .issue-list > li:hover {
        background-color: var(--backgroundColorElevated3)
     }
     .details-layout .split-view .list-results-panel .count-pagination {
         border-top-color: var(--borderColor);
+    }
+    
+    div.mce-edit-area {
+        background: var(--backgroundColorElevated1);
+        filter: none;
     }
     
     
@@ -434,6 +489,20 @@
     form.aui .upfile {
         background: var(--backgroundColorElevated1);
         border-radius: var(--noBorderWidth);
+        color: var(--textColor);
+    }
+    
+    form.aui .jira-wikifield ~ .save-options.wiki-button-bar, 
+    .sd-rte-bar {
+        background: var(--backgroundColorElevated2);
+        border: var(--noBorderWidth);
+        border-radius: var(--noBorderWidth);
+        padding: 0px 0px;
+    }
+    
+    form.aui .password::placeholder, 
+    form.aui .text::placeholder,
+    form.aui .textarea::placeholder {
         color: var(--textColor);
     }
     
@@ -626,6 +695,10 @@
         color: var(--linkColor);
     }
     
+     .ghx-issuetable .issuerow:hover {
+        background-color: var(--backgroundColorElevated2)
+    }
+    
     .ghx-swimlane-header {
         background-color: var(--backgroundColorElevated4);
     }
@@ -646,6 +719,10 @@
     }
     .icon-container.icon-container.quick-search-active[data-v-5c9e2424] {
         background-color: var(--backgroundColorElevated7);
+    }
+    
+    .icon-sidebar-components {
+        color: var(--iconColor);
     }
     
     .issue-body-content .module > .mod-header > h1, 
@@ -677,13 +754,7 @@
         border-bottom: 2px solid var(--borderColor);
     }
     
-    .ghx-issuetable .issuerow:hover {
-        background-color: var(--backgroundColorElevated2)
-    }
-    
-    table.aui > tbody > tr, 
-    table.aui > tfoot > tr {
-        background: var(--backgroundColorElevated1);
+    .issue-drop-zone__button {
         color: var(--linkColor);
     }
     
@@ -710,6 +781,44 @@
         color: var(--textColor);
     }
     
+    .jira-dialog {
+        background: var(--backgroundColorElevated4);
+        border: var(--noBorderWidth);
+        border-radius: var(--noBorderWidth);
+        overflow: hidden;
+        box-shadow: 0 8px 16px -4px rgba(9,30,66,0.25),0 0 1px rgba(9,30,66,0.31);
+    }
+    
+    .jira-dialog .jira-dialog-heading {
+        background: var(--backgroundColorElevated4);
+        border: var(--noBorderWidth);
+    }
+    
+    .jira-dialog .jira-dialog-heading h2 {
+        color: var(--accentColorYellow);
+    }
+    
+    .jira-dialog .jira-dialog-content {
+        background: var(--backgroundColor);
+    }
+    
+    .jira-dialog .buttons-container {
+        background: var(--backgroundColorElevated3);
+        border: var(--noBorderWidth);
+    }
+    
+    .jira-dialog .buttons-container .hint-container {
+        color: var(--textColor);
+        margin: 0;
+        padding: 5px 10px;
+        text-align: left;
+
+    }
+    
+    .richeditor-cover ~ .rte-container:not(:empty) {
+        border: var(--noBorderWidth);
+    }
+    
     .simple-issue-list .inline-issue-create-container {
         background-color: var(--backgroundColorElevated2);
         border-top: 2px solid var(--borderColor);
@@ -727,5 +836,31 @@
     
     .stats-gadget table.aui > tbody > tr.stats-gadget-final-row {
         background-color: var(--backgroundColorElevated2);
+    }
+    
+    table.aui > tbody > tr, 
+    table.aui > tfoot > tr {
+        background: var(--backgroundColorElevated1);
+        color: var(--linkColor);
+    }
+    
+    .wiki-edit-content .wiki-editor-initialised.wiki-edit-wrapped {
+        border: var(--noBorderWidth)
+    }
+    
+    .wiki-edit-toolbar {
+        padding: 5px;
+        border: var(--noBorderWidth);
+        line-height: 1;
+        background-color: var(--backgroundColorElevated2);
+        border-radius: var(--noBorderWidth);
+    }
+    
+    .workflow-designer {
+        background-color: var(--backgroundColor);
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+
     }
 }
