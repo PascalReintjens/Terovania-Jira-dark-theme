@@ -155,7 +155,7 @@
     #issuetable > tfoot > tr, 
     .issue-table > tfoot > tr {
         background-color: var(--backgroundColorElevated1);
-        color: #172b4d;
+        color: var(--linkColor);
     }
     
     body#tinymce {
@@ -448,6 +448,10 @@
     .details-layout .split-view .list-results-panel .list-panel .issue-list > li:hover {
        background-color: var(--backgroundColorElevated3)
     }
+    .details-layout .split-view .list-results-panel{
+        border-right-color: var(--borderColor);
+    }
+    
     .details-layout .split-view .list-results-panel .count-pagination {
         border-top-color: var(--borderColor);
     }
@@ -812,11 +816,32 @@
         margin: 0;
         padding: 5px 10px;
         text-align: left;
+    }
+    
+    .navigator-body {
+        background-color: var(--backgroundColor);
+        border-bottom: 1px solid var(--borderColor);
+    }
 
+    .navigator-container {
+        background-color: var(--backgroundColorElevated3);
+    }
+    
+    .navigator-search {
+        border-bottom-color: var(--borderColor);
+    }
+    
+    
+    .page-type-split .navigator-body {
+        background-color: var(--backgroundColor);
     }
     
     .richeditor-cover ~ .rte-container:not(:empty) {
         border: var(--noBorderWidth);
+    }
+    
+    .simple-issue-list {
+        background-color: var(--backgroundColor)
     }
     
     .simple-issue-list .inline-issue-create-container {
