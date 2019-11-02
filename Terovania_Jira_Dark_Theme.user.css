@@ -38,6 +38,8 @@
     
         --iconColor: #111;
         --iconColorLight: #888;
+        --linkColorSelected: #eee;
+        --backgroundSelected: rgba(9,30,66,0.25);
     
         --borderColor:#888;
         --borderColorPostButton: #666;
@@ -888,4 +890,69 @@
         table-layout: fixed;
 
     }
+    
+    /* Admin Interface */
+    
+    .aui-navgroup ~ .aui-page-panel .aui-page-panel-nav, .aui-page-header ~ .aui-page-panel .aui-page-panel-nav, .aui-sidebar ~ .aui-page-panel .aui-page-panel-nav {
+	  background-color: var(--backgroundColorElevated3);
+	}
+
+	.aui-navgroup-horizontal::after {
+	  background-color: var(--borderColor);
+	}
+
+	#header .aui-message {
+	  background-color: var(--badgeBackgroundColor);
+	  color: var(--textColorLight1);
+	}
+
+	.aui-nav-vertical .aui-nav .aui-nav-selected > a, .aui-navgroup-vertical .aui-nav .aui-nav-selected > a {
+	  color: var(--linkColorSelected);
+	  background-color: var(--backgroundSelected);
+	}
+
+	.aui-nav-vertical > li > a:hover, .aui-navgroup-vertical .aui-nav > li > a:hover {
+	  background-color: var(--backgroundSelected);
+	}
+
+	.upm-plugin-list {
+	  background-color: var(--backgroundColorElevated4);
+	}
+
+	.upm-marketplace .upm-plugin-row p.upm-plugin-summary {
+	  color: var(--textColorLight1);
+	}
+
+	#upm-container .upm-plugin-vendor a, #upm-container .upm-plugin-support a, .upm-plugin-header .upm-section div {
+	  color: var(--linkColor);
+	}
+
+	.upm-plugin-row:hover {
+	  background-color: var(--backgroundColorElevated7);
+	}
+
+	.upm-plugins-see-more {
+	  background-color: var(--linkColor);
+	}
+
+	#upm-link-bar {
+	  border-top: 1px solid var(--borderColor);
+	}
+
+	.upm-plugin-header h4 {
+	  color: var(--accentColorYellow);
+	}
+
+	#upm-container a.incognito {
+	  color: var(--linkColor);
+	}
+
+	#upm-container > h2 {
+	  color: var(--accentColorYellow);
+	}
+
+	p.upm-description {
+	  color: var(--textColorLight1);
+	}
+
 }
