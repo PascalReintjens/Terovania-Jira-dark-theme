@@ -927,7 +927,8 @@
         color: var(--textColorLight1);
     }
 
-    #upm-container .upm-plugin-vendor a, .upm-plugin-header .upm-section div {
+    #upm-container .upm-plugin-vendor a, 
+    .upm-plugin-header .upm-section div {
         color: var(--linkColor);
     }
 
