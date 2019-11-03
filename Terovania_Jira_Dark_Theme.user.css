@@ -888,7 +888,11 @@
         display: table;
         width: 100%;
         table-layout: fixed;
-
+    }
+    
+    #components-add__component {
+        background-color: var(--backgroundColorElevated3);
+        border-color: var(--borderColor);
     }
     
     /* Admin Interface */
