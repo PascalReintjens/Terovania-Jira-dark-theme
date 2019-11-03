@@ -2079,7 +2079,47 @@
         border-color: var(--borderColor);
     }
     
+    .gadget a:hover, .config a:hover, .gadget a:focus, .config a:focus, .gadget a:active, .config a:active {
+        color: var(--linkColor);
+    }
+
+    .gadget a:hover, .config a:hover, .gadget a:focus, .config a:focus, .gadget a:active, .config a:active {
+        color: var(--linkColorHover);
+    }
+
+    .activity-item-description .user-content {
+        color: var(--textColorLight1);
+    }
+
+    .gadget a:hover, .config a:hover, .gadget a:focus, .config a:focus, .gadget a:active, .config a:active {
+        color: var(--linkColorHover);
+    }
+
+    .nav-links .nav-link-edit {
+        color: var(--textColorVeryDark1);
+    }
+    
     /* Admin Interface */
+    
+    html {
+        background-color: var(--backgroundColor);
+    }
+
+    #page {
+        background-color: var(--backgroundColor);
+    }
+
+    .p-list > table > thead .active {
+        background-color: var(--backgroundColorElevated7);
+    }
+
+    .p-list > table > thead .sortable:hover {
+        background-color: var(--backgroundColorElevated7);
+    }
+
+    .browse-projects table.aui>thead {
+        border-color: var(--borderColor);
+    }
     
     .aui-page-header ~ .aui-page-panel .aui-page-panel-nav {
         background-color: var(--backgroundColorElevated3);
