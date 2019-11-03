@@ -5,10 +5,10 @@
 @homepageURL    https://github.com/EaranMaleasi/Terovania-Jira-dark-theme
 @supportURL     https://github.com/EaranMaleasi/Terovania-Jira-dark-theme/issues
 @updateURL      https://raw.githubusercontent.com/EaranMaleasi/Terovania-Jira-dark-theme/master/Terovania_Jira_Dark_Theme.user.css
-@version        1.1.2
+@version        1.2.0
 @license        CC-BY-NC-SA-4.0
 ==/UserStyle== */
-@-moz-document domain("dev.terovania.de") {
+@-moz-document domain("dev.terovania.de"), domain("wiki.terovania.de") {
     :root{
         --backgroundColor: #202020;
         --backgroundColorElevated1:#292929;
@@ -84,6 +84,13 @@
         border: 1px solid var(--borderColor);
     }
     
+    #com-atlassian-confluence .aui-dd-parent .aui-dropdown {
+        background-color: var(--backgroundColorElevated5);
+        border: 1px solid var(--borderColor);
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    
     #comment-edit-cancel {
         Color: var(--linkColor);
     }
@@ -108,6 +115,10 @@
         background: none;
     }
     
+    #full-height-container {
+        background-color: transparent;
+    }
+    
     #gh:not(.ghx-sticky-sprint-headers-disabled) .ghx-backlog-container .ghx-backlog-header {
         position: sticky;
         position: -webkit-sticky;
@@ -130,6 +141,18 @@
     #ghx-pool {
         background: var(--backgroundColor);
     }
+    
+    #header .aui-header {
+        background-color: var(--backgroundColorElevated5);
+        color: #292929;
+    }
+    
+    #header .aui-header a,
+    #header .aui-header .aui-nav-imagelink,
+    #header .aui-header .aui-nav-link {
+        color: var(--linkColor);
+    }
+    
     
     #issue-comment-add-cancel{
         color:var(--accentColorYellow);
@@ -160,6 +183,15 @@
         color: var(--linkColor);
     }
     
+    #main #main-header.overlay-header {
+        border-bottom: 1px solid #ccc;
+        background-color: var(--backgroundColorElevated1)
+    }
+    
+    #title-text a {
+        color: var(--linkColor);
+    }
+    
     body#tinymce {
         background-color:var(--backgroundColorElevated1);
     }
@@ -175,12 +207,43 @@
         color:var(--textColor);
     }
     
-    a {
+    
+    a,
+    a:hover,
+    a:visited,
+    a:link {
         color: var(--linkColor);
     }
     
-    a:hover {
-        color: var(--linkColor);
+    a:hover{
+        background-color: var(--backgroundColorElevated3) !important;
+        border-radius: var(--noBorderWidth) !important;
+    }
+    
+    .acs-nav-list .acs-nav-item-label{
+        color : var(--linkColor);
+    }
+    
+    .acs-nav-sections p{
+        color: var(--textColor);
+    }
+    
+    
+    .acs-side-bar {
+        background-color: var(--backgroundColorElevated3);
+    }
+    
+    .acs-side-bar .current-item .acs-nav-item-link, 
+    .collapsed .quick-links-section:hover, 
+    .collapsed .advanced-links-section:hover, 
+    .collapsed .ia-secondary-header-title.wiki .parent-item>a:hover, 
+    .collapsed .ia-secondary-header-title.page-tree:hover, 
+    .acs-side-bar-flyout li.acs-tree-item a:hover, 
+    .acs-side-bar-flyout li.acs-tree-item a:focus, 
+    li.acs-nav-item .acs-nav-item-link:hover, 
+    li.acs-nav-item .acs-nav-item-link:focus {
+        background-color: var(--backgroundColorElevated1);
+        border-radius: var(--noBorderWidth);
     }
     
     .activity-item-description blockquote {
@@ -215,6 +278,17 @@
     .ajs-layer {
         background-color: var(--backgroundColorElevated5);
         border-radius: var(--noBorderWidth);
+    }
+    
+    .App_search-ui-app__1LGa5 {
+        color: var(--textColor);
+    }
+    
+    .App_search-ui-app__1LGa5 input[type='text'],
+    .App_search-ui-app__1LGa5 input[type='text']:focus,
+    .App_search-ui-app__1LGa5 input[type='text']:after {
+        color: var(--textColor);
+        background: var(--noBorderColor);
     }
     
     aui-badge, 
@@ -253,6 +327,10 @@
 
     }
     
+    .aui-button.aui-button-primary .aui-icon {
+        color: var(--textColorVeryDark1);
+    }
+    
     .aui-button-subtle.aui-button:focus,
     .aui-button-subtle.aui-button:hover,
     .aui-button:focus,
@@ -274,6 +352,8 @@
         border-color: transparent;
         color: var(--iconColorLight);
     }
+    
+    
 
     .aui-dd-parent .aui-dropdown a.item-link, 
     .aui-dd-parent .aui-dropdown a.item-link:link, 
@@ -288,6 +368,11 @@
     .aui-dd-parent .aui-shadow-parent, 
     .aui-dropdown {
         background: var(--backgroundColorElevated5);
+    }
+    
+    .aui-dropdown2 .aui-dropdown2-section li a,
+    .aui-dropdown2 .aui-dropdown2-section li a:hover {
+        color: var(--linkColor);
     }
     
     .aui-dropdown2.aui-style-default {
@@ -319,6 +404,16 @@
     .quick-search-section-heading[data-v-fe28b7ec] {
         color: var(--accentColorYellow);
     }
+    
+    .aui-dropdown2-in-header.aui-style-default a, 
+    .aui-dropdown2-in-header.aui-style-default a:visited,
+    .aui-dropdown2-in-header.aui-style-default a:hover,
+    .aui-dropdown2-in-header.aui-style-default a:link,
+    .aui-dropdown2-in-header.aui-style-default:hover a, 
+    .aui-dropdown2-in-header.aui-style-default:hover a:visited, 
+    .aui-dropdown2-in-header.aui-style-default:hover a:link {
+        color: var(--linkColor)
+    }
 
     .aui-header{
         background: var(--backgroundColorElevated5);
@@ -330,7 +425,7 @@
     }
     
     .aui-header a {
-        color: var(--textColor);;
+        color: var(--textColor);
     }
     
     .aui-inline-dialog .aui-inline-dialog-contents, 
@@ -367,6 +462,12 @@
         border-radius:var(--noBorderWidth);
     }
     
+    .aui-message-hint, .aui-message-info {
+        background: var(--backgroundColorElevated2);
+        border-color: #0052cc;
+        color: var(--textColor);
+    }
+    
     .aui-navgroup-horizontal .aui-nav > li a, 
     .aui-navgroup-vertical .aui-nav > li > a, 
     .aui-nav-vertical > li > a {
@@ -390,8 +491,14 @@
         color: var(--linkColor);
     }
     
-    .aui-navgroup-horizontal .aui-nav > li a, .aui-navgroup-horizontal .aui-nav > li a:link, .aui-navgroup-horizontal .aui-nav > li a:visited {
+    .aui-navgroup-horizontal .aui-nav > li a, 
+    .aui-navgroup-horizontal .aui-nav > li a:link, 
+    .aui-navgroup-horizontal .aui-nav > li a:visited {
         color: var(--textColor);
+    }
+    
+    .aui-page-header {
+        background-color: var(--backgroundColorElevated1);
     }
     
     .aui-page-panel {
@@ -407,8 +514,15 @@
         border:var(--noBorderWidth);
     }
     
-    .aui-sidebar-submenu .aui-nav > li > .aui-nav-item > .aui-icon, .aui-sidebar .aui-nav > li > .aui-nav-item > .aui-icon {
+    .aui-sidebar-submenu .aui-nav > li > .aui-nav-item > .aui-icon, 
+    .aui-sidebar .aui-nav > li > .aui-nav-item > .aui-icon {
         color: var(--iconColorLight);
+    }
+    
+    .aui-sidebar .aui-navgroup-vertical .aui-nav .aui-nav-selected>.aui-nav-item {
+        background-color: var(--backgroundColorElevated5);
+        color: var(--linkColor);
+        font-weight: 500;
     }
     
     .aui-tabs > .tabs-menu .menu-item a, 
@@ -434,6 +548,30 @@
         background: var(--borderColor);
     }
     
+    .aui-toolbar .aui-dd-parent a.aui-dd-trigger, 
+    .aui-toolbar .toolbar-group .toolbar-trigger {
+        color: var(--textColor);
+    }
+    
+    .CheckboxListItem_checkbox-list-item-component__3FNWN button {
+        color: var(--linkColor);
+    }
+    .CheckboxListItem_checkbox-list-item-component__3FNWN button:hover {
+        background-color: var(--backgroundColorElevated3);
+    }
+    
+    .confluence-information-macro {
+        background: var(--backgroundColorElevated1);
+        border: 1px solid var(--borderColor);
+        border-radius: var(--noBorderWidth);
+        color: var(--textColor);
+    }
+    
+    .content-header {
+        background: var(--backgroundColor);
+    }
+    
+    
     .date-header {
         border-top: 1px solid var(--borderColor);
         color: var(--textColor);
@@ -453,7 +591,7 @@
     .details-layout .split-view .list-results-panel{
         border-right-color: var(--borderColor);
     }
-    
+
     .details-layout .split-view .list-results-panel .count-pagination {
         border-top-color: var(--borderColor);
     }
@@ -820,6 +958,20 @@
         text-align: left;
     }
     
+    label.CheckboxListItem_checkbox-list-item-component__3FNWN:hover {
+       background-color:var(--backgroundColorElevated3);
+    }
+    
+    .list-container a,
+    .list-container a:visited{
+         color: var(--linkColor);
+    }
+    
+    .list-container-all-updates .update-item:hover {
+        background-color: var(--backgroundColorElevated3);
+        border-radius:0px;
+    }
+
     .navigator-body {
         background-color: var(--backgroundColor);
         border-bottom: 1px solid var(--borderColor);
@@ -833,19 +985,92 @@
         border-bottom-color: var(--borderColor);
     }
     
+    .page-metadata{
+        color: var(--textColorDark3)
+    }
     
+    .page-metadata ul li a:link,
+    .page-metadata ul li a:visited{
+        color: var(--linkColor);
+    }
+    
+    .quick-comment-prompt {
+        border: 1px var(--borderColor) solid;
+        background-color: var(--backgroundColorElevated1);
+        border-radius: var(--noBorderWidth);
+    }
+    
+    .quick-comment-prompt:active {
+        border-color: var(--borderColor);
+        color: var(--textColor);
+    }
+
     .page-type-split .navigator-body {
         background-color: var(--backgroundColor);
+    }
+
+    .RecentContentItem_result-item-title__f9hg- {
+        color: var(--linkColor);
+    }
+    .RecentContentItem_result-item-metadata__1a_7Y {
+        color: var(--textColor);
+    }
+    .RecentSpaceItem_recent-space-title__qUP_R {
+        color: var(--linkColor);
     }
     
     .richeditor-cover ~ .rte-container:not(:empty) {
         border: var(--noBorderWidth);
     }
     
+    #rte-toolbar {
+        font-size: 0;
+        width: 100%;
+        line-height: 1;
+        border-bottom: 1px solid #dfe1e5;
+        margin: 0;
+        padding: 0;
+        padding-top: 7px;
+        background-color: var(--backgroundColorElevated3);
+    }
+
+    .SearchDrawerPanel_drawer-panel-content__2uGQD {
+        background-color:var(--backgroundColorElevated2);
+    }
+    
+    .SearchContentItem_content-title__tMLba {
+        color: var(--linkColor);
+    }
+    .SearchContentItem_content-body__2ATd3 {
+        color: var(--textColor);
+    }
+    .SearchContentItem_content-subtitle__3bwT6 {
+        color: var(--textColorDark3);
+    }
+    
+    .SearchContainer_search-typeahead-container__27oDw input[type='text'] {
+        background-color:transparent;
+        color: var(--textColor);
+    }
+    
+    .SearchSelect_search-filter-drop-down__4TTsO {
+        background-color: var(--backgroundColorElevated1)
+    }
+    
+    .SearchSelect_search-select-component__11Flk .typeahead-component[type="text"],
+    .SearchSelect_search-select-component__11Flk .typeahead-component[type="text"]:active,
+    .SearchSelect_search-select-component__11Flk .typeahead-component[type="text"]:focus{
+        Color:var(--textColor);
+    }
+    
+    .SearchSelect_search-filter-drop-down__4TTsO {
+        color: var(--textColor);
+    }
+
     .simple-issue-list {
         background-color: var(--backgroundColor)
     }
-    
+
     .simple-issue-list .inline-issue-create-container {
         background-color: var(--backgroundColorElevated2);
         border-top: 2px solid var(--borderColor);
@@ -865,11 +1090,32 @@
         background-color: var(--backgroundColorElevated2);
     }
     
+    .stickable .stick, .stickable .stuck {
+        background: var(--backgroundColor);
+    }
+    
     table.aui > tbody > tr, 
     table.aui > tfoot > tr {
         background: var(--backgroundColorElevated1);
         color: var(--linkColor);
     }
+    
+    .wiki-content a, 
+    .wiki-content a:link, 
+    .wiki-content a:visited, 
+    .wiki-content a:focus, 
+    .wiki-content a:hover, 
+    .wiki-content a:active {
+        color: var(--accentColorYellow);
+    }
+    
+    .wiki-content h1, 
+    .wiki-content h2, 
+    .wiki-content h3, 
+    .wiki-content h4{
+        color: var(--accentColorYellow);
+    }
+
     
     .wiki-edit-content .wiki-editor-initialised.wiki-edit-wrapped {
         border: var(--noBorderWidth)
@@ -888,6 +1134,7 @@
         display: table;
         width: 100%;
         table-layout: fixed;
+
     }
     
     #components-add__component {
@@ -1004,5 +1251,4 @@
     table.aui:not(.aui-table-list)>tfoot>tr>th {
         border-color: var(--borderColor);
     }
-
 }
