@@ -70,6 +70,7 @@
         --announcementColor:var(--accentColorYellow);
         --stickyColor:var(--accentColorCyan)
     }
+}
 
 @-moz-document domain("wiki.terovania.de") {
     #activitymodule .issuePanelContainer {
