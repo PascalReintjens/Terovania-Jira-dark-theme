@@ -959,5 +959,50 @@
     p.upm-description {
         color: var(--textColorLight1);
     }
+    
+    #admin-nav-heading .aui-navgroup-inner .aui-nav > li a:active {
+        background-color: var(--badgeBackgroundColor);
+    }
+
+    .aui-message-hint, .aui-message-info {
+        background-color: var(--accentColorBlue);
+        color: var(--textColorLight2);
+    }
+
+    .aui-message-hint::after, .aui-message-info::after {
+        color: var(--textColorLight1);
+    }
+
+    table.aui > thead {
+        border-color: var(--borderColor);
+    }
+
+    table.aui.aui-table-rowhover > tbody tr:hover {
+        background-color: var(--backgroundColorElevated5);
+    }
+
+    .aui-navgroup-vertical .aui-nav + .aui-nav {
+        border-color: var(--borderColor);
+    }
+
+    table.aui > caption {
+        background-color: var(--accentColorYellow);
+    }
+
+    .aui-message-hint, .aui-message-info {
+        background-color: var(--accentColorBlue);
+        color: var(--badgeTextColor);
+    }
+
+    .aui-message-hint::after, .aui-message-info::after {
+        color: var(--badgeTextColor);
+    }
+
+    table.aui:not(.aui-table-list)>tbody>tr>td,
+    table.aui:not(.aui-table-list)>tbody>tr>th,
+    table.aui:not(.aui-table-list)>tfoot>tr>td,
+    table.aui:not(.aui-table-list)>tfoot>tr>th {
+        border-color: var(--borderColor);
+    }
 
 }
