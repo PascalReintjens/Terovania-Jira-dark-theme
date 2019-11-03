@@ -5,7 +5,7 @@
 @homepageURL    https://github.com/EaranMaleasi/Terovania-Jira-dark-theme
 @supportURL     https://github.com/EaranMaleasi/Terovania-Jira-dark-theme/issues
 @updateURL      https://raw.githubusercontent.com/EaranMaleasi/Terovania-Jira-dark-theme/master/Terovania_Jira_Dark_Theme.user.css
-@version        1.1.1
+@version        1.1.2
 @license        CC-BY-NC-SA-4.0
 ==/UserStyle== */
 @-moz-document domain("dev.terovania.de") {
@@ -893,7 +893,7 @@
     
     /* Admin Interface */
     
-    .aui-navgroup ~ .aui-page-panel .aui-page-panel-nav, .aui-page-header ~ .aui-page-panel .aui-page-panel-nav, .aui-sidebar ~ .aui-page-panel .aui-page-panel-nav {
+    .aui-page-header ~ .aui-page-panel .aui-page-panel-nav {
         background-color: var(--backgroundColorElevated3);
     }
 
@@ -906,12 +906,12 @@
         color: var(--textColorLight1);
     }
 
-    .aui-nav-vertical .aui-nav .aui-nav-selected > a, .aui-navgroup-vertical .aui-nav .aui-nav-selected > a {
+    .aui-navgroup-vertical .aui-nav .aui-nav-selected > a {
         color: var(--linkColorSelected);
         background-color: var(--backgroundSelected);
     }
 
-    .aui-nav-vertical > li > a:hover, .aui-navgroup-vertical .aui-nav > li > a:hover {
+    .aui-navgroup-vertical .aui-nav > li > a:hover {
         background-color: var(--backgroundSelected);
     }
 
@@ -923,7 +923,7 @@
         color: var(--textColorLight1);
     }
 
-    #upm-container .upm-plugin-vendor a, #upm-container .upm-plugin-support a, .upm-plugin-header .upm-section div {
+    #upm-container .upm-plugin-vendor a, .upm-plugin-header .upm-section div {
         color: var(--linkColor);
     }
 
